@@ -1,0 +1,69 @@
+/* p[name="mitexto"] {
+    font-size: 60px;
+    background-color: black;
+    color: white
+}  */
+.seudo:last-child {
+    font-size: 30px;
+} 
+   
+header {
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid;
+    /* NombreAnicacion Intervalo TipoAnimacion TiempoInicio TipoLoop  */
+    animation: mianimacion 5s ease-in-out 2s infinite normal none;
+}
+#titulo {
+    font: bold 26px Verdana, sans-serif;
+} 
+@keyframes mianimacion {
+    20% {
+        background: #FFFFFF;
+    }
+    35% {
+        transform: scale(0.5);
+        background: #FFFF00;
+    }
+    50% {
+        transform: scale(1.5);
+        background: #FF0000;
+    }
+    65% {
+        transform: scale(0.5);
+        background: #FFFF00;
+    }
+    80% {
+        background: #FFFFFF;
+    }
+}
+
+
+#cajapadre {
+    position: relative;
+    width: 365px;
+    height: 274px;
+    overflow: hidden;
+    border: 1px solid #FF0000;
+}
+#contenedor {
+    position: absolute;
+    top: 0px;
+    width: 365px;
+    height: 324px;
+}
+#contenedorsuperior {
+    width: 365px;
+    height: 274px;
+}
+#contenedorinferior {
+    width: 365px;
+    height: 35px;
+    padding-top: 15px;
+    background-color: rgba(200, 200, 200, 0.8);
+    text-align: center;
+}
+#contenedor:hover {
+    top: -50px;
+} 
